@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuSwitchTheme"
+        android:title="@string/action_bar.popup_menu.theme"
+        android:orderInCategory="80"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuAbout"
+        android:title="@string/action_bar.popup_menu.about"
+        android:orderInCategory="90"
+        app:showAsAction="always" />
+
+</menu>
