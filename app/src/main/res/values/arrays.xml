@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="beginner_routine_gifs">
+        <item>@drawable/beg_1</item>
+        <item>@drawable/beg_2</item>
+        <item>@drawable/beg_3</item>
+        <item>@drawable/beg_4</item>
+        <item>@drawable/beg_5</item>
+        <item>@drawable/beg_6</item>
+        <item>@drawable/beg_7</item>
+        <item>@drawable/beg_8</item>
+        <item>@drawable/beg_9</item>
+        <item>@drawable/beg_10</item>
+        <item>@drawable/beg_11</item>
+        <item>@drawable/beg_12</item>
+        <item>@drawable/beg_13</item>
+        <item>@drawable/beg_14</item>
+        <item>@drawable/beg_15</item>
+    </integer-array>
+
+    <integer-array name="intermediate_routine_gifs">
+        <item>@drawable/int_1</item>
+        <item>@drawable/int_2</item>
+        <item>@drawable/int_3</item>
+        <item>@drawable/int_4</item>
+        <item>@drawable/int_5</item>
+        <item>@drawable/int_6</item>
+    </integer-array>
+
+    <integer-array name="advanced_routine_gifs">
+        <item>@drawable/adv_1</item>
+        <item>@drawable/adv_2</item>
+        <item>@drawable/adv_3</item>
+        <item>@drawable/adv_4</item>
+        <item>@drawable/adv_5</item>
+        <item>@drawable/adv_6</item>
+        <item>@drawable/adv_7</item>
+        <item>@drawable/adv_8</item>
+    </integer-array>
+
+</resources>
