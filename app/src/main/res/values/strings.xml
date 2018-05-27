@@ -1,3 +1,119 @@
 <resources>
     <string name="app_name">DeadlyAbRoutine</string>
+
+    <string name="general.routine.finished">Finished: %1$d times</string>
+    <string name="general.routine.average_time">Average time: %1$dmin %2$dsec</string>
+
+    <string name="result.message">Well done!</string>
+    <string name="result.finished_in">Finished in %1$d min %2$d sec</string>
+    <string name="result.average_time">It takes you %1$d min %2$d sec on average to complete.</string>
+    <string name="result.finished_count">%1$d finished sets.</string>
+    <string name="result.btn_repeat">New Set</string>
+    <string name="result.btn_finish">I\'m done</string>
+
+    <string name="routine.btn_start.text">Start routine</string>
+    <string name="routine.btn_next.text">Next exercise</string>
+    <string name="routine.btn_finish.text">Finish</string>
+
+    <!-- beginner routine -->
+    <string name="routine.beginner.title">Beginner routine</string>
+    <string name="routine.beginner.summary">Ab killer routine good for beginners.</string>
+
+    <string name="routine.beginner.exercise_1">Half crunches</string>
+    <string name="routine.beginner.exercise_2">Half crunches side to side</string>
+    <string name="routine.beginner.exercise_3">Push Through</string>
+    <string name="routine.beginner.exercise_4">Twisting Crunches</string>
+    <string name="routine.beginner.exercise_5">Leg Lifts</string>
+    <string name="routine.beginner.exercise_6">Leg Tucks</string>
+    <string name="routine.beginner.exercise_7">Left Crossover Crunches</string>
+    <string name="routine.beginner.exercise_8">Right Crossover Crunches</string>
+    <string name="routine.beginner.exercise_9">Leg Lifts All The Way</string>
+    <string name="routine.beginner.exercise_10">Head Lifts</string>
+    <string name="routine.beginner.exercise_11">V-ups</string>
+    <string name="routine.beginner.exercise_12">Crunches Chest Out</string>
+    <string name="routine.beginner.exercise_13">V-up Hands On The Floor</string>
+    <string name="routine.beginner.exercise_14">Scissors</string>
+    <string name="routine.beginner.exercise_15">Max Plank Hold</string>
+
+    <string name="routine.beginner.reps">10 to 15 reps</string>
+
+    <!-- intermediate routine -->
+    <string name="routine.intermediate.title">Intermediate routine</string>
+    <string name="routine.intermediate.summary">Ab killer routine good for medium advanced people.</string>
+
+    <string name="routine.intermediate.exercise_1">Dragon Flags</string>
+    <string name="routine.intermediate.exercise_2">Dragon Flags Extensions</string>
+    <string name="routine.intermediate.exercise_3">Circular Hanging Leg Lifts</string>
+    <string name="routine.intermediate.exercise_4">Slow Flat Back Crunches</string>
+    <string name="routine.intermediate.exercise_5">V to L Hanging Leg Lifts</string>
+    <string name="routine.intermediate.exercise_6">Max Hanging L-sit</string>
+
+    <string name="routine.intermediate.reps">6 to 8 reps</string>
+
+    <!-- advanced routine -->
+    <string name="routine.advanced.title">Advanced routine</string>
+    <string name="routine.advanced.summary">Ab routine only for the hardcore killers.</string>
+
+    <string name="routine.advanced.exercise_1">Right Arm Dragon Flags</string>
+    <string name="routine.advanced.exercise_2">Left Arm Dragon Flags</string>
+    <string name="routine.advanced.exercise_3">Right Arm Dragon Flags Extensions</string>
+    <string name="routine.advanced.exercise_4">Left Arm Dragon Flags Extensions</string>
+    <string name="routine.advanced.exercise_5">Right Arm Hanging Leg Lifts</string>
+    <string name="routine.advanced.exercise_6">Left Arm Hanging Leg Lifts</string>
+    <string name="routine.advanced.exercise_7">L-sit Lifts</string>
+    <string name="routine.advanced.exercise_8">Max L-sit Hold</string>
+
+    <string name="routine.advanced.reps">6 to 8 reps</string>
+
+    <string-array name="beginner_routine">
+        <item>@string/routine.beginner.exercise_1</item>
+        <item>@string/routine.beginner.exercise_2</item>
+        <item>@string/routine.beginner.exercise_3</item>
+        <item>@string/routine.beginner.exercise_4</item>
+        <item>@string/routine.beginner.exercise_5</item>
+        <item>@string/routine.beginner.exercise_6</item>
+        <item>@string/routine.beginner.exercise_7</item>
+        <item>@string/routine.beginner.exercise_8</item>
+        <item>@string/routine.beginner.exercise_9</item>
+        <item>@string/routine.beginner.exercise_10</item>
+        <item>@string/routine.beginner.exercise_11</item>
+        <item>@string/routine.beginner.exercise_12</item>
+        <item>@string/routine.beginner.exercise_13</item>
+        <item>@string/routine.beginner.exercise_14</item>
+        <item>@string/routine.beginner.exercise_15</item>
+    </string-array>
+
+    <string-array name="intermediate_routine">
+        <item>@string/routine.intermediate.exercise_1</item>
+        <item>@string/routine.intermediate.exercise_2</item>
+        <item>@string/routine.intermediate.exercise_3</item>
+        <item>@string/routine.intermediate.exercise_4</item>
+        <item>@string/routine.intermediate.exercise_5</item>
+        <item>@string/routine.intermediate.exercise_6</item>
+    </string-array>
+
+    <string-array name="advanced_routine">
+        <item>@string/routine.advanced.exercise_1</item>
+        <item>@string/routine.advanced.exercise_2</item>
+        <item>@string/routine.advanced.exercise_3</item>
+        <item>@string/routine.advanced.exercise_4</item>
+        <item>@string/routine.advanced.exercise_5</item>
+        <item>@string/routine.advanced.exercise_6</item>
+    </string-array>
+
+    <string name="routine.display_always_on_warning.text">Your screen will stay on as long as you are exercising.</string>
+    <string name="action_bar.menu.title">Menu</string>
+    <string name="action_bar.popup_menu.theme">Switch theme</string>
+    <string name="action_bar.popup_menu.about">About</string>
+
+    <string name="about.disclaimer.text">This guide has been created by Dominic Sky and can be found on YouTube. I do not own any part of it and do not make profit of it. You should checkout the original video on YouTube and other videos made by Dominic.</string>
+    <string name="about.email_developer">Email developer</string>
+    <string name="about.star_on_google_play">Star on Google Play</string>
+    <string name="about.fork_on_github">Fork on Github</string>
+    <string name="about.developer_email">lukas.srom@gmail.com</string>
+    <string name="about.developer_email_subject">About your Deadly Abs Routine app</string>
+    <string name="about.developed_by">Developed by Luke Šrom</string>
+
+    <string name="mail.pick_provider">Choose mail provider</string>
+
 </resources>
