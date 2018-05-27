@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoutine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/txtExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/general.text_size.title"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/txtReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general.title_margin.bottom"
+        app:layout_constraintTop_toBottomOf="@id/txtExercise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/general.text_size.content"
+        tools:text="How many reps" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifExercise"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="@dimen/routine.gif.width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/routine.reps_margin.bottom"
+        app:layout_constraintTop_toBottomOf="@id/txtReps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/beg_1" />
+
+    <TextView
+        android:id="@+id/txtDisplayWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gifExercise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/general.text_size.small"
+        android:text="@string/routine.display_always_on_warning.text" />
+
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/routine.timer_margin.bottom"
+        app:layout_constraintBottom_toTopOf="@id/btnNext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/general.text_size.title"
+        android:visibility="invisible"
+        tools:text="Timer"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="@dimen/routine.gif.width"
+        android:layout_height="@dimen/routine.btn.height"
+        android:layout_marginBottom="@dimen/routine.btn_margin.bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/routine.btn_start.text"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+</android.support.constraint.ConstraintLayout>

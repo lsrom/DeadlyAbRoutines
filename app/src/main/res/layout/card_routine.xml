@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/card.gap"
+    android:layout_marginStart="@dimen/card.gap"
+    android:layout_marginEnd="@dimen/card.gap">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/card.inner_padding">
+
+        <ImageView
+            android:id="@+id/imgTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card.image.height"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/card.inner_padding"
+            android:importantForAccessibility="no"
+            android:background="@color/colorPrimaryLight" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card.title.margin_top"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@dimen/general.text_size.title"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/imgTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/card.inner_padding"
+            android:layout_marginEnd="@dimen/card.inner_padding"
+            android:textSize="@dimen/general.text_size.medium"
+            tools:text="Some summary here" />
+
+        <TextView
+            android:id="@+id/txtFinished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtSummary"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/general.routine.finished"
+            android:layout_marginTop="@dimen/card.summary_margin.bottom"
+            android:layout_marginStart="@dimen/card.inner_padding"
+            android:layout_marginLeft="@dimen/card.inner_padding"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/general.text_size.small"
+            tools:text="Finished title" />
+
+        <TextView
+            android:id="@+id/txtAverageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtSummary"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/card.summary_margin.bottom"
+            android:layout_marginEnd="@dimen/card.inner_padding"
+            android:layout_marginRight="@dimen/card.inner_padding"
+            android:text="@string/general.routine.average_time"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/general.text_size.small"
+            tools:text="Average time title" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/about.padding">
+
+    <TextView
+        android:id="@+id/disclaimerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/about.disclaimer.text"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/general.text_size.medium" />
+
+    <ImageView
+        android:id="@+id/imgVideoThumbnail"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="@dimen/routine.gif.width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/about.margin"
+        app:layout_constraintTop_toBottomOf="@id/disclaimerText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/video_thumbnail" />
+
+    <TextView
+        android:id="@+id/txtEmailDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/about.margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgVideoThumbnail"
+        android:drawableStart="@drawable/ic_email_blue_24dp"
+        android:drawableLeft="@drawable/ic_email_blue_24dp"
+        android:drawablePadding="@dimen/about.drawable_padding"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/about.email_developer"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/general.text_size.medium" />
+
+    <TextView
+        android:id="@+id/txtStarOnGooglePlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/about.margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtEmailDeveloper"
+        android:drawableStart="@drawable/ic_star_gold_24dp"
+        android:drawableLeft="@drawable/ic_star_gold_24dp"
+        android:drawablePadding="@dimen/about.drawable_padding"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/about.star_on_google_play"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/general.text_size.medium" />
+
+    <TextView
+        android:id="@+id/developedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/appVersion"
+        android:textSize="@dimen/general.text_size.small"
+        android:textColor="@color/colorSecondaryText"
+        android:text="@string/about.developed_by" />
+
+    <TextView
+        android:id="@+id/appVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="@dimen/general.text_size.small"
+        android:textColor="@color/colorSecondaryText" />
+
+</android.support.constraint.ConstraintLayout>
