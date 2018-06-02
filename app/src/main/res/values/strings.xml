@@ -2,7 +2,7 @@
     <string name="app_name">DeadlyAbRoutine</string>
 
     <string name="general.routine.finished">Finished: %1$d times</string>
-    <string name="general.routine.average_time">Average time: %1$dmin %2$dsec</string>
+    <string name="general.routine.average_time">Average time: %1$d min %2$d sec</string>
 
     <string name="result.finished_in">Finished in %1$d min %2$d sec</string>
     <string name="result.average_time">It takes you %1$d min %2$d sec on average to complete.</string>
@@ -16,7 +16,7 @@
 
     <!-- beginner routine -->
     <string name="routine.beginner.title">Beginner routine</string>
-    <string name="routine.beginner.summary">Ab killer routine good for beginners.</string>
+    <string name="routine.beginner.summary">Exercise series good for beginners. Try 10 - 15 reps </string>
 
     <string name="routine.beginner.exercise_1">Half crunches</string>
     <string name="routine.beginner.exercise_2">Half crunches side to side</string>
