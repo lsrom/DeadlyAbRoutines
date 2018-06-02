@@ -6,8 +6,8 @@
 
     <string name="result.finished_in">Dokončeno za %1$d min %2$d sec</string>
     <string name="result.average_time">Průměrný čas dokončení je %1$d minut %2$d sekund.</string>
-    <string name="result.finished_count">%1$d finished sets.</string>
-    <string name="result.btn_repeat">NOvý set</string>
+    <string name="result.finished_count">%1$d dokončených setů.</string>
+    <string name="result.btn_repeat">Nový set</string>
     <string name="result.btn_finish">Hotovo</string>
 
     <string name="routine.btn_start.text">Začít</string>
@@ -18,51 +18,51 @@
     <string name="routine.beginner.title">Pro začátečníky</string>
     <string name="routine.beginner.summary">Série cviků vhodná pro začátečníky. Zkuste 10 – 15 opakování na cvik ve třech sériích.</string>
 
-    <string name="routine.beginner.exercise_1">Half crunches</string>
-    <string name="routine.beginner.exercise_2">Half crunches side to side</string>
-    <string name="routine.beginner.exercise_3">Push Through</string>
-    <string name="routine.beginner.exercise_4">Twisting Crunches</string>
-    <string name="routine.beginner.exercise_5">Leg Lifts</string>
-    <string name="routine.beginner.exercise_6">Leg Tucks</string>
-    <string name="routine.beginner.exercise_7">Left Crossover Crunches</string>
-    <string name="routine.beginner.exercise_8">Right Crossover Crunches</string>
-    <string name="routine.beginner.exercise_9">Leg Lifts All The Way</string>
-    <string name="routine.beginner.exercise_10">Head Lifts</string>
+    <string name="routine.beginner.exercise_1">Poloviční sedy</string>
+    <string name="routine.beginner.exercise_2">Poloviční sedy lehy do stran</string>
+    <string name="routine.beginner.exercise_3">Prostrčení</string>
+    <string name="routine.beginner.exercise_4">Sedy lehy do stran</string>
+    <string name="routine.beginner.exercise_5">Zvedání nohou</string>
+    <string name="routine.beginner.exercise_6">Přítahy nohou</string>
+    <string name="routine.beginner.exercise_7">Sedy lehy k levému kolenu</string>
+    <string name="routine.beginner.exercise_8">Sedy lehy k pravému kolenu</string>
+    <string name="routine.beginner.exercise_9">Zvedání nohou až nahoru</string>
+    <string name="routine.beginner.exercise_10">Zvedání hlavy</string>
     <string name="routine.beginner.exercise_11">V-ups</string>
-    <string name="routine.beginner.exercise_12">Crunches Chest Out</string>
-    <string name="routine.beginner.exercise_13">V-up Hands On The Floor</string>
-    <string name="routine.beginner.exercise_14">Scissors</string>
-    <string name="routine.beginner.exercise_15">Max Plank Hold</string>
+    <string name="routine.beginner.exercise_12">Sedy lehy s vystřetou hrudí</string>
+    <string name="routine.beginner.exercise_13">V-ups s rukama na zemi</string>
+    <string name="routine.beginner.exercise_14">Nůžky</string>
+    <string name="routine.beginner.exercise_15">Max prkno</string>
 
-    <string name="routine.beginner.reps">10 to 15 reps</string>
+    <string name="routine.beginner.reps">10 až 15 opakování</string>
 
     <!-- intermediate routine -->
-    <string name="routine.intermediate.title">Intermediate routine</string>
-    <string name="routine.intermediate.summary">Ab killer routine good for medium advanced people.</string>
+    <string name="routine.intermediate.title">Pro středně pokročilé</string>
+    <string name="routine.intermediate.summary">Série cviků vhodná pro pokročilé cvičence. Zkuste 6 – 8 opakování na cvik ve třech sériích.</string>
 
-    <string name="routine.intermediate.exercise_1">Dragon Flags</string>
-    <string name="routine.intermediate.exercise_2">Dragon Flags Extensions</string>
-    <string name="routine.intermediate.exercise_3">Circular Hanging Leg Lifts</string>
-    <string name="routine.intermediate.exercise_4">Slow Flat Back Crunches</string>
-    <string name="routine.intermediate.exercise_5">V to L Hanging Leg Lifts</string>
-    <string name="routine.intermediate.exercise_6">Max Hanging L-sit</string>
+    <string name="routine.intermediate.exercise_1">Dračí vlajka</string>
+    <string name="routine.intermediate.exercise_2">Dračí vlajka se zvedáním nohou</string>
+    <string name="routine.intermediate.exercise_3">Kruhové zvedání nohou ve visu</string>
+    <string name="routine.intermediate.exercise_4">Pomalé sedy lehy s rovnými zády</string>
+    <string name="routine.intermediate.exercise_5">Zvedání nohou z V do L ve visu</string>
+    <string name="routine.intermediate.exercise_6">Max visící L-sit</string>
 
-    <string name="routine.intermediate.reps">6 to 8 reps</string>
+    <string name="routine.intermediate.reps">6 až 8 opakování</string>
 
     <!-- advanced routine -->
-    <string name="routine.advanced.title">Advanced routine</string>
-    <string name="routine.advanced.summary">Ab routine only for the hardcore killers.</string>
+    <string name="routine.advanced.title">Pro nejpokročilejší</string>
+    <string name="routine.advanced.summary">Série cviků vhodná pouze pro velmi pokročilé jedince. Zvolte počty opakování cviků a počet sérií podle vlastní úvahy.</string>
 
-    <string name="routine.advanced.exercise_1">Right Arm Dragon Flags</string>
-    <string name="routine.advanced.exercise_2">Left Arm Dragon Flags</string>
-    <string name="routine.advanced.exercise_3">Right Arm Dragon Flags Extensions</string>
-    <string name="routine.advanced.exercise_4">Left Arm Dragon Flags Extensions</string>
-    <string name="routine.advanced.exercise_5">Right Arm Hanging Leg Lifts</string>
-    <string name="routine.advanced.exercise_6">Left Arm Hanging Leg Lifts</string>
-    <string name="routine.advanced.exercise_7">L-sit Lifts</string>
-    <string name="routine.advanced.exercise_8">Max L-sit Hold</string>
+    <string name="routine.advanced.exercise_1">Dračí vlajka pravou rukou</string>
+    <string name="routine.advanced.exercise_2">Dračí vlajka levou rukou</string>
+    <string name="routine.advanced.exercise_3">Dračí vlajka se zvedáním nohou pravou rukou</string>
+    <string name="routine.advanced.exercise_4">Dračí vlajka se zvedáním nohou levou rukou</string>
+    <string name="routine.advanced.exercise_5">Zvedání nohou ve visu na pravé ruce</string>
+    <string name="routine.advanced.exercise_6">Zvedání nohou ve visu na levé ruce</string>
+    <string name="routine.advanced.exercise_7">Zvedání nohou v L-situ</string>
+    <string name="routine.advanced.exercise_8">Max L-sit držení</string>
 
-    <string name="routine.advanced.reps">6 to 8 reps</string>
+    <string name="routine.advanced.reps">Alespoň 6 opakování</string>
 
     <string-array name="beginner_routine">
         <item>@string/routine.beginner.exercise_1</item>
@@ -100,17 +100,18 @@
         <item>@string/routine.advanced.exercise_6</item>
     </string-array>
 
-    <string name="routine.display_always_on_warning.text">Your screen will stay on as long as you are exercising.</string>
-    <string name="action_bar.popup_menu.theme">Switch theme</string>
-    <string name="action_bar.popup_menu.about">About</string>
+    <string name="routine.display_always_on_warning.text">Vaše obrazovka zůstane zapnutá po celou dobu tréninku.</string>
+    <string name="action_bar.popup_menu.theme">Změnit téma</string>
+    <string name="action_bar.popup_menu.about">O aplikaci</string>
 
-    <string name="about.disclaimer.text">This guide has been created by Dominic Sky and can be found on YouTube. I do not own any part of it and do not make profit of it. You should checkout the original video on YouTube and other videos made by Dominic.</string>
-    <string name="about.email_developer">Email developer</string>
-    <string name="about.star_on_google_play">Star on Google Play</string>
+    <string name="about.disclaimer.text">Série cviků v této aplikaci byly vytvořeny Dominikem Sky a můžete je shlédnout v jeho videu na YouTube. Doporučuji navštívit jeho kanál a shlédnout jeho videa.</string>
+
+    <string name="about.email_developer">Email vývojáři</string>
+    <string name="about.star_on_google_play">Ohodnotit na Google Play</string>
     <string name="about.developer_email">lukas.srom@gmail.com</string>
-    <string name="about.developer_email_subject">About your Deadly Abs Routine app</string>
-    <string name="about.developed_by">Developed by Luke Šrom</string>
+    <string name="about.developer_email_subject">O tvé Deadly Abs Routine aplikaci</string>
+    <string name="about.developed_by">Napsal Luke Šrom</string>
 
-    <string name="mail.pick_provider">Choose mail provider</string>
+    <string name="mail.pick_provider">Vyberte emailového klienta</string>
 
 </resources>
