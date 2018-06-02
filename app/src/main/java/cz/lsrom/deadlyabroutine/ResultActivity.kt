@@ -3,9 +3,9 @@ package cz.lsrom.deadlyabroutine
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.View
 import cz.lsrom.deadlyabroutine.model.RoutineStorage
+import cz.lsrom.deadlyabroutine.model.Time
 import kotlinx.android.synthetic.main.activity_result.*
 
 /**
@@ -13,15 +13,12 @@ import kotlinx.android.synthetic.main.activity_result.*
  */
 class ResultActivity : BaseActivity() {
     companion object {
-        private val MINUTES_TAG = "mins"
-        private val SECONDS_TAG = "secs"
+        private val TIME_TAG = "time"
         private val ROUTINE_TAG = "routine"
 
-        fun startIntent(minutes: Int, seconds: Int, routine: Int, context: Context): Intent {
-            return Intent(context, ResultActivity::class.java).putExtra(MINUTES_TAG, minutes)
-                .putExtra(
-                    SECONDS_TAG, seconds
-                )
+        fun startIntent(time: Time, routine: Int, context: Context): Intent {
+            return Intent(context, ResultActivity::class.java)
+                .putExtra(TIME_TAG, time)
                 .putExtra(ROUTINE_TAG, routine)
         }
     }
@@ -34,8 +31,7 @@ class ResultActivity : BaseActivity() {
         setContentView(R.layout.activity_result)
         routine = intent.getIntExtra(ROUTINE_TAG, 0)
 
-        var minutes = intent.getIntExtra(MINUTES_TAG, 0)
-        var seconds = intent.getIntExtra(SECONDS_TAG, 0)
+        var timeHolder = intent.getParcelableExtra<Time>(TIME_TAG)
 
         when (routine) {
             RoutineStorage.BEGINNER -> {
@@ -43,7 +39,7 @@ class ResultActivity : BaseActivity() {
             }
         }
 
-        spManager.addSet((minutes * 60) + seconds, routine)
+        spManager.addSet((timeHolder.minutes * 60) + timeHolder.seconds, routine)
 
         var time = spManager.getAverageTime(routine)
         var avgMins = 0
@@ -53,7 +49,11 @@ class ResultActivity : BaseActivity() {
             avgSecs = time % 60
         }
 
-        txtFinishedIn.text = String.format(getString(R.string.result_finished_in), minutes, seconds)
+        txtFinishedIn.text = String.format(
+            getString(R.string.result_finished_in),
+            timeHolder.minutes,
+            timeHolder.seconds
+        )
         txtAverageTime.text = String.format(
             getString(R.string.result_average_time),
             avgMins, avgSecs

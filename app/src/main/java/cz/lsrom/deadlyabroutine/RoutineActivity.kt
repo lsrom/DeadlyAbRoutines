@@ -1,5 +1,6 @@
 package cz.lsrom.deadlyabroutine
 
+import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.content.Context
 import android.content.Intent
@@ -12,8 +13,10 @@ import cz.lsrom.deadlyabroutine.`interface`.ISwipeListener
 import cz.lsrom.deadlyabroutine.model.Exercises
 import cz.lsrom.deadlyabroutine.model.Routine
 import cz.lsrom.deadlyabroutine.model.RoutineStorage
+import cz.lsrom.deadlyabroutine.model.Time
 import cz.lsrom.deadlyabroutine.viewmodel.RoutineViewModel
 import kotlinx.android.synthetic.main.activity_routine.*
+import pl.droidsonroids.gif.GifDrawable
 
 /**
  * @author Lukas Srom <lukas.srom@gmail.com>
@@ -37,38 +40,20 @@ class RoutineActivity : BaseActivity(), ISwipeListener {
 
     private lateinit var routine: Routine
     private lateinit var exercises: Exercises
-    private var position: Int = 0
+    private var routineNumber = 0
 
     companion object {
         private val TAG: String = RoutineActivity::class.java.simpleName
         private val EXTRA = "routine_data"
-        private val VELOCITY_THRESHOLD: Long = 3000
 
+        private val VELOCITY_THRESHOLD: Long = 3000
         fun startIntent(routine: Int, context: Context): Intent {
             val intent = Intent(context, RoutineActivity::class.java)
             intent.putExtra(EXTRA, routine)
 
             return intent
         }
-    }
 
-    var startTime: Long = 0
-    var routineNumber = 0
-    var seconds: Int = 0
-    var minutes: Int = 0
-    var timerHandler = Handler()
-    var timerRunnable: Runnable = object : Runnable {
-
-        override fun run() {
-            val millis = System.currentTimeMillis() - startTime
-            seconds = (millis / 1000).toInt()
-            minutes = seconds / 60
-            seconds %= 60
-
-            txtTimer.text = String.format("%d:%02d", minutes, seconds)
-
-            timerHandler.postDelayed(this, 500)
-        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -90,6 +75,12 @@ class RoutineActivity : BaseActivity(), ISwipeListener {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
 
+        if (viewModel.observableTime().value != null) {
+            btnNext.text = getString(R.string.routine_btn_next_text)
+            txtTimer.visibility = View.VISIBLE
+            observerTime()
+        }
+
         btnNext.setOnClickListener(View.OnClickListener {
             if (btnNext.text == getString(R.string.routine_btn_start_text)) {
                 startRoutine()
@@ -98,7 +89,7 @@ class RoutineActivity : BaseActivity(), ISwipeListener {
             }
         })
 
-        showExercise(position)
+        showExercise(viewModel.getPosition())
         txtReps.text = exercises.reps
 
         // keep screen on
@@ -111,29 +102,38 @@ class RoutineActivity : BaseActivity(), ISwipeListener {
     }
 
     fun startRoutine() {
-        startTime = System.currentTimeMillis()
-        timerHandler.postDelayed(timerRunnable, 0)
+        observerTime()
+        viewModel.startRoutine()
 
         btnNext.text = getString(R.string.routine_btn_next_text)
         txtTimer.visibility = View.VISIBLE
     }
 
+    fun observerTime() {
+        viewModel.observableTime().observe(this, Observer {
+            txtTimer.text = String.format("%d:%02d", it?.minutes, it?.seconds)
+        })
+    }
+
     fun nextExercise() {
-        if (position < exercises.names.length() - 1) {
-            position++
-            showExercise(position)
-            if (exercises.names.length() - 1 == position) {
+        if (viewModel.getPosition() < exercises.names.length() - 1) {
+            viewModel.incrementPosition()
+            showExercise(viewModel.getPosition())
+            if (exercises.names.length() - 1 == viewModel.getPosition()) {
                 btnNext.text = getString(R.string.routine_btn_finish_text)
             }
         } else {
-            startActivity(ResultActivity.startIntent(minutes, seconds, routineNumber, this))
+            val time: Time? = viewModel.observableTime().value
+            if (time != null) {
+                startActivity(ResultActivity.startIntent(time!!, routineNumber, this))
+            }
         }
     }
 
     fun previousExercise() {
-        if (position > 0) {
-            position--
-            showExercise(position)
+        if (viewModel.getPosition() > 0) {
+            viewModel.incrementPosition()
+            showExercise(viewModel.getPosition())
             btnNext.text = getString(R.string.routine_btn_next_text)
         }
     }
