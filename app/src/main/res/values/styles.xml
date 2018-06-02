@@ -10,6 +10,7 @@
         <item name="android:textColorPrimary">@color/colorPrimaryText</item>
         <item name="android:textColorSecondary">@color/colorSecondaryText</item>
         <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:itemTextAppearance">@style/PopupMenu</item>
 
         <item name="android:textSize">@dimen/general.text_size.content</item>
     </style>
@@ -24,10 +25,15 @@
         <item name="android:textColorPrimary">@color/colorWhite</item>
         <item name="android:textColorSecondary">@color/colorLightGray</item>
         <item name="android:windowBackground">@color/colorBlack</item>
-        <item name="android:textAppearanceSmallPopupMenu">@color/colorBlack</item>
-        <item name="android:textAppearanceLargePopupMenu">@color/colorBlack</item>
+        <item name="android:itemTextAppearance">@style/PopupMenu</item>
 
         <item name="android:textSize">@dimen/general.text_size.content</item>
+    </style>
+
+    <style name="PopupMenu" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:textColorSecondary">@color/colorBlack</item>
     </style>
 
 </resources>
