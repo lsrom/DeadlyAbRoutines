@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
         <item name="android:textColorPrimary">@color/colorPrimaryText</item>
         <item name="android:textColorSecondary">@color/colorSecondaryText</item>
         <item name="android:windowBackground">@color/colorWhite</item>
@@ -19,6 +20,7 @@
         <item name="colorPrimary">@color/colorBlack</item>
         <item name="colorPrimaryDark">@color/colorBlack</item>
         <item name="colorAccent">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textColorPrimary">@color/colorWhite</item>
         <item name="android:textColorSecondary">@color/colorLightGray</item>
         <item name="android:windowBackground">@color/colorBlack</item>
