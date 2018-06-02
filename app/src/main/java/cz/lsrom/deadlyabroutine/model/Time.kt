@@ -1,7 +1,5 @@
 package cz.lsrom.deadlyabroutine.model
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
 import android.os.Parcel
 import android.os.Parcelable
 

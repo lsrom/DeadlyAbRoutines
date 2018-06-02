@@ -4,9 +4,7 @@ import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 import android.os.Handler
-import android.util.Log
 import cz.lsrom.deadlyabroutine.model.Time
-import kotlinx.android.synthetic.main.activity_routine.*
 
 /**
  * @author Lukas Srom <lukas.srom@gmail.com>

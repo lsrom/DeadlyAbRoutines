@@ -5,7 +5,6 @@ import android.arch.lifecycle.ViewModelProviders
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.util.Log
 import android.view.View
 import android.view.WindowManager
@@ -16,7 +15,6 @@ import cz.lsrom.deadlyabroutine.model.RoutineStorage
 import cz.lsrom.deadlyabroutine.model.Time
 import cz.lsrom.deadlyabroutine.viewmodel.RoutineViewModel
 import kotlinx.android.synthetic.main.activity_routine.*
-import pl.droidsonroids.gif.GifDrawable
 
 /**
  * @author Lukas Srom <lukas.srom@gmail.com>
