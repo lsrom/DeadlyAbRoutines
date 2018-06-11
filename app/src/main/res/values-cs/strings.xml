@@ -2,9 +2,9 @@
     <string name="app_name">DeadlyAbRoutine</string>
 
     <string name="general.routine.finished">Dokončeno: %1$d krát</string>
-    <string name="general.routine.average_time">Průměrný čas: %1$d min %2$d sekundut</string>
+    <string name="general.routine.average_time">Průměrný čas: %1$d minut %2$d sekund</string>
 
-    <string name="result.finished_in">Dokončeno za %1$d min %2$d sec</string>
+    <string name="result.finished_in">Dokončeno za %1$d minut %2$d sekund</string>
     <string name="result.average_time">Průměrný čas dokončení je %1$d minut %2$d sekund.</string>
     <string name="result.finished_count">%1$d dokončených setů.</string>
     <string name="result.btn_repeat">Nový set</string>

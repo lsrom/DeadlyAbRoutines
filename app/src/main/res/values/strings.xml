@@ -5,7 +5,7 @@
     <string name="general.routine.average_time">Average time: %1$d min %2$d sec</string>
 
     <string name="result.finished_in">Finished in %1$d min %2$d sec</string>
-    <string name="result.average_time">It takes you %1$d min %2$d sec on average to complete.</string>
+    <string name="result.average_time">It takes you %1$d minuts %2$d seconds on average to complete.</string>
     <string name="result.finished_count">%1$d finished sets.</string>
     <string name="result.btn_repeat">New Set</string>
     <string name="result.btn_finish">I\'m done</string>
@@ -16,7 +16,7 @@
 
     <!-- beginner routine -->
     <string name="routine.beginner.title">Beginner routine</string>
-    <string name="routine.beginner.summary">Exercise series good for beginners. Try 10 - 15 reps </string>
+    <string name="routine.beginner.summary">Exercise series good for beginners. Try 10 – 15 reps in three sets</string>
 
     <string name="routine.beginner.exercise_1">Half crunches</string>
     <string name="routine.beginner.exercise_2">Half crunches side to side</string>
@@ -38,7 +38,7 @@
 
     <!-- intermediate routine -->
     <string name="routine.intermediate.title">Intermediate routine</string>
-    <string name="routine.intermediate.summary">Ab killer routine good for medium advanced people.</string>
+    <string name="routine.intermediate.summary">Good for intermediately advanced athletes. Try to do at least 6 to 8 reps in three sets.</string>
 
     <string name="routine.intermediate.exercise_1">Dragon Flags</string>
     <string name="routine.intermediate.exercise_2">Dragon Flags Extensions</string>
@@ -51,7 +51,7 @@
 
     <!-- advanced routine -->
     <string name="routine.advanced.title">Advanced routine</string>
-    <string name="routine.advanced.summary">Ab routine only for the hardcore killers.</string>
+    <string name="routine.advanced.summary">Advanced athletes only. Actual sets and reps are completely up to you.</string>
 
     <string name="routine.advanced.exercise_1">Right Arm Dragon Flags</string>
     <string name="routine.advanced.exercise_2">Left Arm Dragon Flags</string>
@@ -62,7 +62,7 @@
     <string name="routine.advanced.exercise_7">L-sit Lifts</string>
     <string name="routine.advanced.exercise_8">Max L-sit Hold</string>
 
-    <string name="routine.advanced.reps">6 to 8 reps</string>
+    <string name="routine.advanced.reps">At least 6 reps</string>
 
     <string-array name="beginner_routine">
         <item>@string/routine.beginner.exercise_1</item>
@@ -104,7 +104,8 @@
     <string name="action_bar.popup_menu.theme">Switch theme</string>
     <string name="action_bar.popup_menu.about">About</string>
 
-    <string name="about.disclaimer.text">This guide has been created by Dominic Sky and can be found on YouTube. I do not own any part of it and do not make profit of it. You should checkout the original video on YouTube and other videos made by Dominic.</string>
+    <string name="about.disclaimer.text">This guide has been created by Dominic Sky and can be found on YouTube. You should checkout the original video on YouTube and other videos made by Dominic.</string>
+    
     <string name="about.email_developer">Email developer</string>
     <string name="about.star_on_google_play">Star on Google Play</string>
     <string name="about.developer_email">lukas.srom@gmail.com</string>
